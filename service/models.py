@@ -98,7 +98,7 @@ class Account(db.Model, PersistentBase):
         return f"<Account {self.name} id=[{self.id}]>"
 
     def serialize(self):
-        """Serializes a Account into a dictionary"""
+        """Serializes an Account into a dictionary"""
         return {
             "id": self.id,
             "name": self.name,
@@ -110,7 +110,7 @@ class Account(db.Model, PersistentBase):
 
     def deserialize(self, data):
         """
-        Deserializes a Account from a dictionary
+        Deserializes an Account from a dictionary
 
         Args:
             data (dict): A dictionary containing the resource data
